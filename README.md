@@ -1,5 +1,5 @@
 # nextcloud-create_mass_user
-Importing users from .csv file and adding them to specific group
+Importing users from .csv file and adding them to specific group.
 
 ### Requirements
 (Centos / Fedora) **glibc** [[info]](https://sourceware.org/git/?p=glibc.git)  
@@ -17,20 +17,9 @@ Check your correct path to variables in nextuser.sh script:
 
 (all the things are not required if `/var/lib/nginx/` path exist your system)
 
-- GROUP (set a group to assign it to users)   
-
-Correct preparation of .csv file with a list of users.  
-Example:  
-
-Name | Surname | e-mail  
---- | --- | ---  
-John   | Dąbrowski | j.dabrowski@example.com  
-Eric     | Duo-Name | eric.duoname@example.com  
-
-Make sure that double name is seperated by the dash (`-`) without whitespace!
+- GROUP (set a group to assign it to users)
 
 ### How to use it
----------------------------
 The nextuser.sh must have permissions to call **occ** file located in webroot nextcloud, so you have few ways to run it:
 - use sudo to switch to the right user and run script
 `$ sudo -u nginx /usr/local/bin/nextuser.sh`
@@ -48,3 +37,14 @@ The account name will be the users email
 
 ### Features
 - You can use the polish special charakcters in the user name (i.e. ą, ć, ę, ü, ö... etc.)
+
+---------------------------
+Correct preparation of .csv file with a list of users.  
+Example:  
+
+Name | Surname | e-mail  
+--- | --- | ---  
+John   | Dąbrowski | j.dabrowski@example.com  
+Eric     | Duo-Name | eric.duoname@example.com  
+
+Make sure that double name is seperated by the dash (`-`) without whitespace!
