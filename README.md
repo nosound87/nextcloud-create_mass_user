@@ -23,17 +23,17 @@ Check your correct path to variables in nextuser.sh script:
 The nextuser.sh must have permissions to call **occ** file located in nextcloud directory, so you have few ways to run it:
 - use sudo to switch to the right user and run script
 `$ sudo -u nginx /usr/local/bin/nextuser.sh`
-- or just change change the web-user,s shell and then run script
+- or just change change the web-user's shell and then run script
 `$ usermod -s /bin/bash nginx`
 `$ su - nginx`
 `$ nextuser.sh`
 
-In the above examples I use `nginx` web user because this is default on Centos (i.e `www-data` is default webuser in Debian). You should check first your nextcloud files owner before run script.
+In the above examples I use `nginx` webuser because that is default on Centos (i.e `www-data` is default webuser in Debian). You should check first your nextcloud files owner before run script.
 
 ### Assumptions
 The script creates new user accounts based on a previously prepared .csv document and assigns them to a specific group.
 Then sends the notification of the new account to the user and allows to change password for that account.
-The account name will be the users email
+The account name will be the user's email
 
 ### Features
 - You can use the polish special charakcters in the user name (i.e. ą, ć, ę, ü, ö... etc.)
