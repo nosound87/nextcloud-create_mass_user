@@ -23,7 +23,7 @@ Correct preparation of .csv file with a list of users.
 Example:  
 
 Name | Surname | e-mail  
--------------- | ---------------  
+--- | --- | ---  
 John   | Dąbrowski | j.dabrowski@example.com  
 Eric     | Duo-Name | eric.duoname@example.com  
 
