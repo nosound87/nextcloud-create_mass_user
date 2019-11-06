@@ -3,10 +3,10 @@ Importing users from .csv file and adding them to specific group
 
 ### Requirements
 (Centos / Fedora) **glibc** [[info]](https://sourceware.org/git/?p=glibc.git)  
-(Debian / Ubuntu) **libc6** [[info]](https://packages.debian.org/pl/sid/libc6)
-**dos2unix**
-**pwgen**
-**sudo**
+(Debian / Ubuntu) **libc6** [[info]](https://packages.debian.org/pl/sid/libc6)  
+**dos2unix**  
+**pwgen**  
+**sudo**  
 
 ### Before use
 Check your correct path to variables in nextuser.sh script:
