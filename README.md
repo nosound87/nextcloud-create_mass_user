@@ -20,8 +20,8 @@ Check your correct path to variables in nextuser.sh script:
 - GROUP (set a group to assign it to users)
 # 
 
-Correct preparation of .csv file with a list of users.
-Example:
+Correct preparation of .csv file with a list of users.  
+Example:  
 
 Name | Surname | e-mail
 -------------- | ---------------
