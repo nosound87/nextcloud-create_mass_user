@@ -23,10 +23,10 @@ Check your correct path to variables in nextuser.sh script:
 Correct preparation of .csv file with a list of users.  
 Example:  
 
-Name | Surname | e-mail
--------------- | ---------------
-John   | Dąbrowski | j.dabrowski@example.com
-Eric     | Duo-Name | eric.duoname@example.com
+Name | Surname | e-mail  
+-------------- | ---------------  
+John   | Dąbrowski | j.dabrowski@example.com  
+Eric     | Duo-Name | eric.duoname@example.com  
 
 Make sure that double name is seperated by the dash (`-`) without whitespace!
 
