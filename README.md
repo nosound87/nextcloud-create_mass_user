@@ -36,7 +36,7 @@ Then sends the notification of the new account to the user and allows to change 
 The account name will be the user's email
 
 ### Features
-- You can use the polish special charakcters in the user name (i.e. ą, ć, ę, ü, ö... etc.)
+- You can use the polish special characters in the user name (i.e. ą, ć, ę, ü, ö... etc.)
 
 ---------------------------
 Correct preparation of .csv file with a list of users.  
