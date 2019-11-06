@@ -11,7 +11,7 @@ Importing users from .csv file and adding them to specific group.
 ### Before use
 Check your correct path to variables in nextuser.sh script:
 - IMPORTF (paste here path, where you locate your .csv file with users.)
-- CONV_PL (paste here temporary path and pay attention to add `convert.csv` at the end of line)
+- CONV (paste here temporary path and pay attention to add `convert.csv` at the end of line)
 - CSV (as in the example above, paste correct path with `date.csv`)
 - OCC (set correct path to the `occ` nextcloud script)
 
