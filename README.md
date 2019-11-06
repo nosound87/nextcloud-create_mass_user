@@ -17,8 +17,7 @@ Check your correct path to variables in nextuser.sh script:
 
 (all the things are not required if `/var/lib/nginx/` path exist your system)
 
-- GROUP (set a group to assign it to users)
-# 
+- GROUP (set a group to assign it to users)   
 
 Correct preparation of .csv file with a list of users.  
 Example:  
