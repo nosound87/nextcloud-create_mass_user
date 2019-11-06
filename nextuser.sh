@@ -1,7 +1,7 @@
 #!/bin/bash
  
 IMPORTF='/var/lib/nginx/*.csv' 		# path your .csv file
-CONV_PL='/var/lib/nginx/convert.csv' 	
+CONV='/var/lib/nginx/convert.csv' 	
 CSV='/var/lib/nginx/data.csv'
 PWGEN=`/bin/pwgen -N 1 -s 16`
 TEMP_PASS=`echo \"$PWGEN\"`
@@ -12,9 +12,9 @@ GROUP='SOME_GROUP'  			# set the name of the group
  
 #Checking .csv file and adding special char to eof.
 if [ ! -e $CSV ]; then
-        /bin/iconv -f cp1250 -t utf8 -o $CONV_PL $IMPORTF
-        /bin/dos2unix -q $CONV_PL
-        cat $CONV_PL | sed -e 's/$/;/g' > $CSV
+        /bin/iconv -f cp1250 -t utf8 -o $CONV $IMPORTF
+        /bin/dos2unix -q $CONV
+        cat $CONV | sed -e 's/$/;/g' > $CSV
 fi
  
 #Decalre empty arrays to collect data user from csv
@@ -43,7 +43,7 @@ do
 done
  
 #ending...
-/bin/rm -fr $CONV_PL $CSV
+/bin/rm -fr $CONV $CSV
  
 exit 0
 
