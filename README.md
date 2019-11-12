@@ -21,12 +21,12 @@ Check your correct path to variables in nextuser.sh script:
 
 ### How to use it
 The nextuser.sh must have permissions to call **occ** file located in nextcloud directory, so you have few ways to run it:
-- use sudo to switch to the right user and run script
+- use sudo to switch to the right user and run script  
 `$ sudo -u nginx /usr/local/bin/nextuser.sh`
-- or just change change the web-user's shell and then run script
-`$ usermod -s /bin/bash nginx`
-`$ su - nginx`
-`$ nextuser.sh`
+- or just change change the web-user's shell and then run script  
+`$ usermod -s /bin/bash nginx`  
+`$ su - nginx`  
+`$ nextuser.sh`  
 
 In the above examples I use `nginx` webuser because that is default on Centos (i.e `www-data` is default webuser in Debian). You should check first your nextcloud files owner before run script.
 
