@@ -23,7 +23,7 @@ Check your correct path to variables in nextuser.sh script:
 The nextuser.sh must have permissions to call **occ** file located in nextcloud directory, so you have few ways to run it:
 - use sudo to switch to the right user and run script  
 `$ sudo -u nginx /usr/local/bin/nextuser.sh`
-- or just change change the web-user's shell and then run script  
+- or just change the web-user's shell and then run script  
 `$ usermod -s /bin/bash nginx`  
 `$ su - nginx`  
 `$ nextuser.sh`  
